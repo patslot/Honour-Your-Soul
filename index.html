@@ -411,14 +411,14 @@
 							<input type="text" placeholder="" class="text_input" id="mobile" name="mobile" ng-model="mobile" required>
 							<input type="text" placeholder="" class="text_input" id="email" name="email" ng-model="email" required>
 							<input type="checkbox" ng-model="tnc" id="tnc">
-							<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top" id="payform" style="display:none;">
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="payform" style="display:none;">
 								<input type="hidden" name="cmd" value="_s-xclick">
 								<input type="hidden" name="charset" value="utf-8">
 								<input type="hidden" name="hosted_button_id" value="SQ29RJX2CSDGY">
 								<input type="hidden" name="custom" id="custom" value="">
 								<input type="hidden" name="currency_code" value="HKD">
-								<input id="paypalsubmit" type="image" src="https://www.sandbox.paypal.com/zh_HK/HK/i/btn/btn_buynowCC_LG_wCUP.gif" border="0" border="0" name="submit" alt="PayPal － 更安全、更簡單的網上付款方式！">
-								<img alt="" border="0" src="https://www.sandbox.paypal.com/zh_HK/i/scr/pixel.gif" width="1" height="1">
+								<input id="paypalsubmit" type="image" src="https://www.paypal.com/zh_HK/HK/i/btn/btn_buynowCC_LG_wCUP.gif" border="0" border="0" name="submit" alt="PayPal － 更安全、更簡單的網上付款方式！">
+								<img alt="" border="0" src="https://www.paypal.com/zh_HK/i/scr/pixel.gif" width="1" height="1">
 							</form>
 							<a class="abslink" id="paynow" ng-click="submitToServer();">
 									<img src="public/btn_paynow.png">

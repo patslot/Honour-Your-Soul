@@ -85,7 +85,7 @@ deluxeclubApp.controller('deluxeclubController', function deluxeclubController($
                     //to stage 3 - user have record
                     $timeout(function () {
                         // to stage 4 when production
-                        $scope.stage = 2;
+                        $scope.stage = 4;
                         $scope.$apply();
                     }, 0);
     
