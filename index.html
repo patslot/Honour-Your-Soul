@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html ng-app="deluxeclub">
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport"
+		content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<title>Deluxe Club</title>
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- <script type="text/javascript" src="https://imp.nextmedia.com/js/nxm_tr_v20s.js"></script> -->
+
+	<script type="text/javascript" src="https://static.omoplanet.com/WebSDK/v3.3.1/omo-sdk-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./public/assets/bundle.js"></script>
+	<script type="text/javascript" src="https://dev-imp.nextmedia.com/js/nxm_tr_v20s_dev.js"></script>
+	<link rel="stylesheet" type="text/css" href="./public/assets/main.css">
+
+
+</head>
+
+<body id="index" ng-controller="deluxeclubController">
+	<div id="container">
+		<div class="middle">
+			<div class="middle_inner">
+					<div class="content loading" ng-show="loading==true">
+							<div class="wrapper">
+								<div class="inner_wrapper centerloading">
+									
+									<img src="public/loading.svg">
+									<p>loading</p>
+								</div>
+							</div>
+					</div>
+				<div class="content" id="stage1" ng-show="stage==1">
+					<div class="wrapper">
+						<div class="inner_wrapper">
+							<div class="visual"><img src="public/logo.png"></div>
+							<div class="visual"><img src="public/p1_1.png"></div>
+							<div class="visual"><img src="public/p1_2.png"></div>
+							<div class="visual">
+								<img src="public/p1_3.png">
+								<a class="abslink" id="workshop_detail_link6" data-toggle="modal" data-target="#workshop_detail6" href="#"></a>
+								<a class="abslink" id="workshop_detail_link7" data-toggle="modal" data-target="#workshop_detail7" href="#"></a>
+								<a class="abslink" id="workshop_detail_link8" data-toggle="modal" data-target="#workshop_detail8" href="#"></a>
+								<a class="abslink" id="workshop_detail_link9" data-toggle="modal" data-target="#workshop_detail9" href="#"></a>
+							</div>
+							<div class="visual">
+								<img src="public/p1_4.png">
+								<a class="abslink" id="workshop_detail_link1" data-toggle="modal" data-target="#workshop_detail1" href="#"></a>
+								<a class="abslink" id="workshop_detail_link2" data-toggle="modal" data-target="#workshop_detail2" href="#"></a>
+								<a class="abslink" id="workshop_detail_link3" data-toggle="modal" data-target="#workshop_detail3" href="#"></a>
+							</div>
+							<div class="visual" style="margin-top: -100px;">
+									<img src="public/p1_5.png">
+									<a class="abslink" id="workshop_detail_link4" data-toggle="modal" data-target="#workshop_detail4" href="#"></a>
+									<a class="abslink" id="workshop_detail_link5" data-toggle="modal" data-target="#workshop_detail5" href="#"></a>
+							</div>
+							<div class="visual_mob"><img src="public/logo.png"></div>
+							<div class="visual_mob"><img src="public/p1_1_mob.png"></div>
+							<div class="visual_mob"><img src="public/p1_2_mob.png"></div>
+							<div class="visual_mob">
+								<img src="public/p1_3_mob.png">
+								<a class="abslink" id="workshop_detail_link6" data-toggle="modal" data-target="#workshop_detail6" href="#"></a>
+								<a class="abslink" id="workshop_detail_link7" data-toggle="modal" data-target="#workshop_detail7" href="#"></a>
+								<a class="abslink" id="workshop_detail_link8" data-toggle="modal" data-target="#workshop_detail8" href="#"></a>
+								<a class="abslink" id="workshop_detail_link9" data-toggle="modal" data-target="#workshop_detail9" href="#"></a>
+							</div>
+							<div class="visual_mob">
+								<img src="public/p1_4_mob.png">
+								<a class="abslink" id="workshop_detail_link1" data-toggle="modal" data-target="#workshop_detail1" href="#"></a>
+								<a class="abslink" id="workshop_detail_link2" data-toggle="modal" data-target="#workshop_detail2" href="#"></a>
+								<a class="abslink" id="workshop_detail_link3" data-toggle="modal" data-target="#workshop_detail3" href="#"></a>
+							</div>
+							<div class="visual_mob" style="margin-top: -18vw;">
+									<img src="public/p1_5_mob.png">
+									<a class="abslink" id="workshop_detail_link4" data-toggle="modal" data-target="#workshop_detail4" href="#"></a>
+									<a class="abslink" id="workshop_detail_link5" data-toggle="modal" data-target="#workshop_detail5" href="#"></a>
+								</div>
+							<div class="visual">
+								<img src="public/p1_6.png">
+								<a class="abslink" id="omologin" ng-click="omologin();">
+									<img src="public/btn_login.png">
+								</a>
+							</div>
+							<div class="visual_mob">
+									<img src="public/p1_6.png">
+									<a class="abslink" id="omologin" ng-click="omologin();">
+										<img src="public/btn_login.png">
+									</a>
+								</div>
+						</div>
+					</div>
+					<!-- workshop_detail1 -->
+					<div class="modal fade" id="workshop_detail1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<img src="public/btn_close.png">
+								</button>
+								
+								<div class="modal-body">
+									<div class="visual">
+										<img src="public/overlay1.jpg">
+									</div>
+									<div class="visual_mob">
+											<img src="public/overlay1_mob.jpg">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- workshop_detail2 -->
+					<div class="modal fade" id="workshop_detail2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<img src="public/btn_close.png">
+									</button>
+									
+									<div class="modal-body">
+										<div class="visual">
+											<img src="public/overlay2.jpg">
+										</div>
+										<div class="visual_mob">
+											<img src="public/overlay2_mob.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+					<!-- workshop_detail3 -->
+					<div class="modal fade" id="workshop_detail3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<img src="public/btn_close.png">
+									</button>
+									
+									<div class="modal-body">
+										<div class="visual">
+											<img src="public/overlay3.jpg">
+										</div>
+										<div class="visual_mob">
+											<img src="public/overlay3_mob.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+					<!-- workshop_detail4 -->
+					<div class="modal fade" id="workshop_detail4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<img src="public/btn_close.png">
+									</button>
+									
+									<div class="modal-body">
+										<div class="visual">
+											<img src="public/overlay4.jpg">
+										</div>
+										<div class="visual_mob">
+											<img src="public/overlay4_mob.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+					<!-- workshop_detail5 -->
+					<div class="modal fade" id="workshop_detail5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<img src="public/btn_close.png">
+									</button>
+									
+									<div class="modal-body">
+										<div class="visual">
+											<img src="public/overlay5.jpg">
+										</div>
+										<div class="visual_mob">
+											<img src="public/overlay5_mob.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+
+					<!-- workshop_detail6 -->
+					<div class="modal fade" id="workshop_detail6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<img src="public/btn_close.png">
+									</button>
+									
+									<div class="modal-body">
+										<div class="visual">
+											<img src="public/overlay6.jpg">
+										</div>
+										<div class="visual_mob">
+											<img src="public/overlay6_mob.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+
+					<!-- workshop_detail7 -->
+					<div class="modal fade" id="workshop_detail7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<img src="public/btn_close.png">
+									</button>
+									
+									<div class="modal-body">
+										<div class="visual">
+											<img src="public/overlay7.jpg">
+										</div>
+										<div class="visual_mob">
+											<img src="public/overlay7_mob.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+
+					<!-- workshop_detail8 -->
+					<div class="modal fade" id="workshop_detail8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<img src="public/btn_close.png">
+									</button>
+									
+									<div class="modal-body">
+										<div class="visual">
+											<img src="public/overlay8.jpg">
+										</div>
+										<div class="visual_mob">
+											<img src="public/overlay8_mob.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+
+					<!-- workshop_detail9 -->
+					<div class="modal fade" id="workshop_detail9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<img src="public/btn_close.png">
+									</button>
+									
+									<div class="modal-body">
+										<div class="visual">
+											<img src="public/overlay9.jpg">
+										</div>
+										<div class="visual_mob">
+											<img src="public/overlay9_mob.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+
+				</div>
+				<div class="content" id="stage2" ng-show="stage==2">
+					<div class="wrapper">
+						<div class="inner_wrapper">
+							<div class="visual"><img src="public/logo.png"></div>
+							<div class="visual_mob"><img src="public/logo.png"></div>
+							<form id="regForm" name="regForm" ng-submit="submitToServer()" method="post" novalidate
+								autocomplete="off">
+								<div class="visual"><img src="public/p2_1.png"></div>
+								<div class="visual_mob"><img src="public/p2_1_mob.png"></div>
+							
+									<select id="stage2-extra" ng-model="Sake" ng-change="saketimeselect()" required>
+										<option value="">-----時間-----</option>
+										<option value="16">12:00-13:00</option>
+										<option value="17">14:00-15:00</option>
+									</select>
+								<p ng-show="regFormError.Sake" class="help-block">請選擇 Sake & Canapés Tasting 時間</p>
+								</br>
+								<div class="visual"><img src="public/p2_2.png"></div>
+								<div class="visual_mob"><img src="public/p2_2_mob.png"></div>
+									<select id="stage2-extra" ng-model="workshop" ng-change="workshopselect()" required>
+										<option value="">-----Premium workshop-----</option>
+										<option value="workshopA">專貴帽飾製作體驗 (名額﹕70名)</option>
+										<option value="workshopB">樹脂藝術木盤工作坊 (名額﹕60名)</option>
+										<option value="workshopC">日式花藝工作坊 (名額﹕70名)</option>
+									</select>
+								</br>
+								<div class="visual" ng-show="workshop=='workshopA'" style="
+								margin-left: 9%; width: 50%;"><img src="public/p2_4.png"></div>
+								<div class="visual" ng-show="workshop=='workshopB'" style="
+								margin-left: 9%; width: 50%;"><img src="public/p2_5.png"></div>
+								<div class="visual" ng-show="workshop=='workshopC'" style="
+								margin-left: 9%; width: 50%;"><img src="public/p2_6.png"></div>
+
+								<div class="visual_mob" ng-show="workshop=='workshopA'" style="
+								margin-left: 9%;"><img src="public/p2_4.png"></div>
+								<div class="visual_mob" ng-show="workshop=='workshopB'" style="
+								margin-left: 9%;"><img src="public/p2_5.png"></div>
+								<div class="visual_mob" ng-show="workshop=='workshopC'" style="
+								margin-left: 9%;"><img src="public/p2_6.png"></div>
+									<select id="stage2-extra" ng-model="workshopTime1" ng-change="workshoptimeselect1()" ng-show="workshop=='workshopA'">
+										<option value="">-----時間-----</option>
+										<option value="1">11:00-11:30</option>
+										<option value="2">11:30-12:00</option>
+										<option value="3">13:00-13:30</option>
+										<option value="4">13:30-14:00</option>
+										<option value="5">15:00-15:30</option>
+										<option value="6">15:30-16:00</option>
+									</select>
+									<select id="stage2-extra" ng-model="workshopTime2" ng-change="workshoptimeselect2()" ng-show="workshop=='workshopB'">
+										<option value="">-----時間-----</option>
+										<option value="7">11:00-12:00</option>
+										<option value="8">13:00-14:00</option>
+										<option value="9">15:00-16:00</option>
+									</select>
+									<select id="stage2-extra" ng-model="workshopTime3" ng-change="workshoptimeselect3()" ng-show="workshop=='workshopC'">
+										<option value="">-----時間-----</option>
+										<option value="10">11:00-11:30</option>
+										<option value="11">11:30-12:00</option>
+										<option value="12">13:00-13:30</option>
+										<option value="13">13:30-14:00</option>
+										<option value="14">15:00-15:30</option>
+										<option value="15">15:30-16:00</option>
+									</select>
+									<p ng-show="regFormError.workshoptime" class="help-block">請選擇Workshop時間</p>
+								</br>
+								<p ng-show="regFormError.timeslot" class="help-block">請選擇時間</p>
+								</br>
+								
+								<div class="visual">
+										<div class="module-border-wrap"><div class="module">
+												<p style="color:#ef5984;">所選場次及項目﹕</p>
+												<p>
+													項目1:  Sake & Canapés Tasting<br>
+													時間:  <span id="Sake_time"> </span><br>
+													<br>
+													項目2:  <span id="Workshop_name"> </span><br>
+													時間:  <span id="Workshop_time"> </span>
+												</p>
+												<p>*一經確認，參加者不得更改所選之場次及項目</p>
+										</div></div>
+								</div>
+							
+							<div class="visual_mob">
+								<div class="module-border-wrap"><div class="module">
+									<p style="color:#ef5984; font-size: 1.3em;">所選場次及項目﹕</p>
+									<p>
+										項目1:  Sake & Canapés Tasting<br>
+										時間:  <span id="Sake_time_mob">14:00 - 15:00</span><br>
+										<br>
+										項目2:  <span id="Workshop_name_mob"></span><br>
+										時間:  <span id="Workshop_time_mob"></span>
+									</p>
+									<p>*一經確認，參加者不得更改所選之場次及項目</p>
+								</div></div>
+							</div>
+						
+							<div class="visual">
+								<img src="public/p1_6.png">
+								<a class="abslink" id="omologin" ng-click="tostage3();">
+									<img src="public/btn_stage2.png">
+								</a>
+							</div>
+							<div class="visual_mob">
+								<img src="public/p1_6.png">
+								<a class="abslink" id="omologin" ng-click="tostage3();">
+									<img src="public/btn_stage2.png">
+								</a>
+							</div>
+						</form>
+							
+						</div>
+					</div>
+				</div>
+				<div class="content" id="stage3" ng-show="stage==3">
+					<div class="wrapper">
+						<div class="inner_wrapper">
+							<div class="visual"><img src="public/p3_1.png"></div>
+							<div class="visual_mob"><img src="public/p3_1_mob.png"></div>
+							
+							<input type="hidden" id="omoid" name="omoid" ng-model="omoid">
+							<input type="text" placeholder="" class="text_input" id="name" name="name" ng-model="name" required>
+							<input type="radio" id="sex-m" ng-model="gender" value="m">
+							<input type="radio" id="sex-f" ng-model="gender" value="f">
+							<select ng-model="age" id="age">
+									<option value="">-----年齡-----</option>
+									<option value="18-24">18-24</option>
+									<option value="25-34">25-34</option>
+									<option value="35-44">35-44</option>
+									<option value="45-54">45-54</option>
+									<option value="55-64">55-64</option>
+									<option value="64以上">64以上</option>
+							</select>
+							<input type="text" placeholder="" class="text_input" id="mobile" name="mobile" ng-model="mobile" required>
+							<input type="text" placeholder="" class="text_input" id="email" name="email" ng-model="email" required>
+							<input type="checkbox" ng-model="tnc" id="tnc">
+							<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top" id="payform" style="display:none;">
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="charset" value="utf-8">
+								<input type="hidden" name="hosted_button_id" value="SQ29RJX2CSDGY">
+								<input type="hidden" name="custom" id="custom" value="">
+								<input type="hidden" name="currency_code" value="HKD">
+								<input id="paypalsubmit" type="image" src="https://www.sandbox.paypal.com/zh_HK/HK/i/btn/btn_buynowCC_LG_wCUP.gif" border="0" border="0" name="submit" alt="PayPal － 更安全、更簡單的網上付款方式！">
+								<img alt="" border="0" src="https://www.sandbox.paypal.com/zh_HK/i/scr/pixel.gif" width="1" height="1">
+							</form>
+							<a class="abslink" id="paynow" ng-click="submitToServer();">
+									<img src="public/btn_paynow.png">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="content" id="stage4" ng-show="stage==4">
+					<div class="wrapper">
+						<div class="inner_wrapper">
+							<div class="visual"><img src="public/logo.png"></div>
+							<div class="visual_mob"><img src="public/logo.png"></div>
+							<div class="visual"><img src="public/p4_1.png"></div>
+							<div class="visual_mob"><img src="public/p4_1.png"></div>
+
+						</div>
+					</div>
+				</div>
+				<div class="content" id="stage5" ng-show="stage==5">
+					<div class="wrapper">
+						<div class="inner_wrapper">
+							<div class="visual"><img src="public/logo.png"></div>
+							<div class="visual"><img src="public/p5_1.png"></div>
+							<div class="visual" style="margin-bottom: 130px;">
+								<img src="public/p1_6.png">
+								<a class="abslink" id="omologin" href="https://hk.appledaily.com/campaign/hkad_subscription.html" target="_blank">
+									<img src="public/btn_subscription.png">
+								</a>
+								<a class="abslink" id="omologin" ng-click="omologin();" style="top: 320px;">
+									<img src="public/btn_loginagain.png">
+								</a>
+							</div>
+							<div class="visual_mob"><img src="public/logo.png"></div>
+							<div class="visual_mob"><img src="public/p5_1.png"></div>
+							<div class="visual_mob">
+								<img src="public/p1_6.png">
+								<a class="abslink" id="omologin" href="https://hk.appledaily.com/campaign/hkad_subscription.html" target="_blank">
+									<img src="public/btn_subscription.png">
+								</a>
+								<a class="abslink" id="omologin" ng-click="omologin();" style="top: 36vw;">
+									<img src="public/btn_loginagain.png">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content" id="stage4" ng-show="stage==6">
+					<div class="wrapper">
+						<div class="inner_wrapper">
+								<div class="visual"><img src="public/full.jpg"></div>
+								<div class="visual_mob"><img src="public/full_mob.jpg"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+</body>
+
+</html>
